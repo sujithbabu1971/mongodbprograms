@@ -1,0 +1,11 @@
+{
+  "name": "mongodbaccess",
+  "version": "1.0.0",
+  "description": "mongo db sample programs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sujith Babu",
+  "license": "ISC"
+}
