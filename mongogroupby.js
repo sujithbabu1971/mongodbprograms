@@ -19,7 +19,7 @@ mongoclient.connect("mongodb://127.0.0.1/", function (err, db)
 			colls.group(["batsman"], {}, {"totalScore":0, "count":0}, 
 					function (obj, prev) 
 					{
-						prev.totalScore= prev.totalScore+ obj.score; 
+						prev.totalScore= prev.totalScore+ obj.runs; 
 						prev.count++;
 					}, {}, true,{},
 					function(err, results) {

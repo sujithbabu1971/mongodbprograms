@@ -19,7 +19,7 @@ mongoclient.connect("mongodb://localhost/cricket", function (err, db){
 			// What options can be used in find (query) are available at 
 			// https://mongodb.github.io/node-mongodb-native/api-generated/collection.html#find
 			
-			colls.find({"score":{$gt:5}}, 
+			colls.find({"runs":{$gt:10}}, 
 					{fields:{batsman:1, _id:0},sort:[['batsman',1]], limit:3},
 					function(err2, cursor){
 						cursor.count(function(error, nbDocs) {
