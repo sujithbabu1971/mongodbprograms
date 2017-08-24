@@ -30,7 +30,9 @@ console.log(token);
 //				
 //			}else{
 //				// everything is fine.
-//				// call next();
+// 				// decoded will have the value data: 'foobar' or whatever is encrypted first.
+//				// call next();  That will forward to the intended page;
+//				next();
 //			}
 //			   
 //			});
